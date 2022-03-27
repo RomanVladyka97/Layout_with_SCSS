@@ -1,0 +1,85 @@
+@font-face {
+  font-family: bahnschift;
+  src: url(/fonts/Bahnschrift-Font-Family/BAHNSCHRIFT.TTF);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'bahnschift', sans-serif;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+.footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  justify-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      grid-template-areas: "header" "main" "footer ";
+}
+
+/*
+   .header {
+     display: flex;
+     align-items: center;
+   }*/
+.main {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1.04%, rgba(245, 245, 245, 0)), to(#F5F5F5));
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+
+/*
+   .navBlock {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-left: 225px;
+     margin-right: auto;
+   }*/
+/*.logo{
+     margin-right: 135px;
+   }
+   .goTo {
+     display: inline-block;
+     color: rgb(0, 0, 0);
+     font-style: normal;
+     font-weight: normal;
+     font-size: 48px;
+     line-height: 1.5;
+     margin-bottom: 10px;
+     cursor: pointer;
+   }
+   
+   .goTo:not(:last-child) {
+     margin-right: 75px;
+   }
+ 
+   .promo {
+     display: flex;
+   }*/

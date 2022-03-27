@@ -1,0 +1,75 @@
+@font-face {
+   font-family: bahnschift;
+   src: url(/fonts/Bahnschrift-Font-Family/BAHNSCHRIFT.TTF);
+ }
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+   }
+   
+   body {
+     font-family: 'bahnschift', sans-serif;
+   }
+   
+   .header {
+     grid-area: header;
+   }
+   .main {
+     grid-area: main;
+   }
+   .footer {
+     grid-area: footer;
+   }
+   .container {
+     display: grid;
+     grid-template-rows: auto;
+     justify-items: stretch;
+     justify-content: center;
+     grid-template-areas: 
+     "header"
+     "main"
+     "footer ";
+   }
+ /*
+   .header {
+     display: flex;
+     align-items: center;
+   }*/
+ 
+   .main {
+     background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+   }
+ /*
+   .navBlock {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-left: 225px;
+     margin-right: auto;
+   }*/
+   /*.logo{
+     margin-right: 135px;
+   }
+   .goTo {
+     display: inline-block;
+     color: rgb(0, 0, 0);
+     font-style: normal;
+     font-weight: normal;
+     font-size: 48px;
+     line-height: 1.5;
+     margin-bottom: 10px;
+     cursor: pointer;
+   }
+   
+   .goTo:not(:last-child) {
+     margin-right: 75px;
+   }
+ 
+   .promo {
+     display: flex;
+   }*/
+ 
+ 
+ 
+ 
