@@ -1,0 +1,66 @@
+// шрифти
+@font-face {
+font-family: bahnschift;
+src: url(/fonts/Bahnschrift-Font-Family/BAHNSCHRIFT.TTF);
+}
+// нульові настройки стилів
+@import "_defaultcfg"; 
+
+.header {grid-area: header}
+.main {grid-area: main}
+.footer {grid-area: footer}
+
+.container {
+  width: 1920px;
+  font-family: 'bahnschift', sans-serif;
+  display: grid;
+  grid-template-rows: repeat(3, auto-fill, minmax(150px, 1fr));
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer"
+}
+
+.header {
+
+		&__logo {
+		}
+
+		&__navBlock {
+		}
+}
+.logo {
+
+		&__icon {
+		}
+}
+.navBlock {
+
+		&__link {
+		}
+}
+.title {
+}
+.main {
+
+		&__promo {
+		}
+}
+.promo {
+
+		&__box {
+
+			&_large {
+			}
+		}
+}
+.box {
+
+		&__text {
+		}
+
+		&__rectangle {
+		}
+}
+.footer {
+}
