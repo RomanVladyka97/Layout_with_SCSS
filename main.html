@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,40 +17,54 @@
   </head>
 
   <body>
-    <!--Шапка-->
+    
     <div class="container">
+      <!--Шапка-->
       <div class="header">
+
         <!--Логотип-->
-        <a href="/main.html">
-          <svg class="logo" width="155" height="74" viewBox="0 0 155 74">
+        <div class="header__logo logo">
+          <svg href="/main.html" class="logo__icon" width="155" height="74" viewBox="0 0 155 74">
             <image id="Група_2" data-name="Група 2" width="155" height="74" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAABKCAYAAACsAyYGAAACgElEQVR4nO3d8U3CUBDH8VfjAI7gCIygE8AG6AhuoCO4AW6AE6AbMAIjsIGGCIk57yFNy73j7vtJ+KO0TSv+0tfea1+78uOrAOfVdQQNVq74pWGFsMEMYYOZ68qGOv4FGOjPtQBHNpghbDBD2GCGsMEMYYMZwgYzhA1mCBvMeArb874QKD93PZZ/7rG9U7alLTPksxrw+1y8aEe2uYN9QEW0sN2WUiYO9gOKiOdsHN2cihi2Bwf7AEXtro9LdlNKmZVSliP8DfdH5s0rwX4qpawr62wv+6cdJmLYdqYjhe3jyLzaVfL6n/XSilpnm+2PcHAkatgOTSkcidyDMHWwD/glcthoSp2J3jdKGcSR6GGjwOtItLDJOtZk34UFB6KFbVfj2ojvaEqdiNiMvoppmlInIoZN9hxwJ4gTEcO2UQLH0c2BqFej72Ka8zYHooZtKa5M6b5yIGrYtkpTSvdVY5GLurIppfuqschhW4qaG01pY9G7q2hKHYkeNlngpSltKHrYNsrzAJRBGskw/MKbmKbA20iGsC3ENHeCNJIhbFrNjaa0gSyjGMmaG01pA1nCthDdVzSjDWQan22Mh5YxQKawyZobjGUKm3bLOAxlG+ZU1txgKFvYZM0NhrKFTeu+gpGMo4W3vFC46zFItbacNkD1SlnO5UDRGcNGCaSRjGHbcu7WRtaXbsjuKxjIGjb59BUMeBpTtzYOba0Qqy3fp2j7qDwp32f9vvt7mPdy4jracto2d7XDzx770Eynvcubd8RjBLwjHu0QNpghbDBD2GCGsMEMYYMZwgYzhA1mCBvMEDaYIWwwU+sbBUbHkQ1mCBvMEDaYOdy3xnkbzquU7hv2AHkHDJgxSAAAAABJRU5ErkJggg=="/>
           </svg>
-        </a>
-        <!--Панель навігації-->
-        <div class="navBlock">
-          <a class="goTo">Новини</a>
-          <a class="goTo">Портфоліо</a>
-          <a class="goTo">Послуги</a>
-          <a class="goTo">Пакети</a>
-          <a class="goTo">Зворотній звязок</a>
         </div>
+
+        <!--Панель навігації-->
+        <nav class="header__navBlock">
+          <a href="#" class="navBlock__link title">Новини</a>
+          <a href="#" class="navBlock__link title">Портфоліо</a>
+          <a href="#" class="navBlock__link title">Послуги</a>
+          <a href="#" class="navBlock__link title">Пакети</a>
+          <a href="#" class="navBlock__link title">Зворотній звязок</a>
+        </nav>
+        
       </div>
 
-     <!--Головні набори з інформацією-->
+      <!--Головні набори з інформацією-->
       <main class="main">
-          <div class="promo">
-            <object type="image/svg+xml" data="/img/promoBackground.svg" width="auto" height="auto">
-            </object>
+        <!--Промо-->
+        <div class="main__promo">
+          <div class="promo__box promo__box_large">
+            <div class="box__text title">ТВОРЧЕ ОБ'ЄДНАННЯ "INT..." СТВОРЕНЕ АРХІТЕКТОРАМИ ТА ДИЗАЙНЕРАМИ З МЕТОЮ ВПРОВАДЖЕННЯ</div>
+            <div class="box__rectangle"></div>
+            <!--<object  type="image/svg+xml"  data="/img/promoBackground.svg" width="auto" height="auto">
+            </object>-->
           </div>
-
-          <div class="cards">
-
+          <div class="promo__box">
+            <div class="box__text title">ТАУНХАУЗИ "САД ТА ПІСНЯ" В НОВОЯВОРІВСЬКУ</div>
+            <div class="box__rectangle"></div>
           </div>
+          <div class="promo__box"></div>
+        </div>
+
       </main>
+      
       <!--Зворотній звязок-->
       <footer class="footer">
 
       </footer>
-    </div> 
+
+    </div>
+    
   </body>
 </html>
