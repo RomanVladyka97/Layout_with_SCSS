@@ -1,3 +1,10 @@
+$maxWidth: 1920;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
 // шрифти
 @font-face {
 font-family: bahnschift;
@@ -38,7 +45,7 @@ src: url(/fonts/Bahnschrift-Font-Family/BAHNSCHRIFT.TTF);
    }
 }
 .text-title {
-   font-size: 250%;
+   @include adaptiv-font(44, 24);
    line-height: 1.15;
    color: var(--black);
    text-decoration: none;
@@ -58,9 +65,9 @@ src: url(/fonts/Bahnschrift-Font-Family/BAHNSCHRIFT.TTF);
 .navigation {
    display: flex;
    flex: 1 1 auto;
-   margin-left: 8%;
+   margin-left: 5%;
    justify-content: space-between;
-   flex-wrap:wrap;
+   //flex-wrap:wrap;
    &__link:not(:last-child){
       margin-right: 15px;
    }
@@ -336,6 +343,32 @@ padding: 10px 10px 10px 10px;*/
    }
    &__feedback:not(:last-child){
       margin-right: 15px;
+   }
+}
+
+@media (max-width:1200px){
+   .container-all {
+      max-width: 970px;
+      padding: 0px 35px;
+   }
+   .navigation {
+      flex-wrap:wrap;
+   }
+}
+@media (max-width:992px) {
+   .container-all {
+      max-width: 750px;
+      padding: 0px 25px;
+   }
+   .navigation {
+      flex-wrap:wrap;
+      justify-content: flex-start;
+   }   
+}
+@media (max-width:762px) {
+   .container-all {
+      max-width: none;
+      padding: 0px 15px;
    }
 }
 

@@ -44,6 +44,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: 'bahnschift', sans-serif;
+  font-size: 16px;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -117,7 +118,7 @@ select {
 }
 
 .text-title {
-  font-size: 250%;
+  font-size: calc(24px + 20 * ((100vw - 320px) / 1600));
   line-height: 1.15;
   color: var(--black);
   text-decoration: none;
@@ -144,12 +145,10 @@ select {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin-left: 8%;
+  margin-left: 5%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .navigation__link:not(:last-child) {
@@ -556,4 +555,36 @@ padding: 10px 10px 10px 10px;*/
 
 .footer__feedback:not(:last-child) {
   margin-right: 15px;
+}
+
+@media (max-width: 1200px) {
+  .container-all {
+    max-width: 970px;
+    padding: 0px 35px;
+  }
+  .navigation {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-all {
+    max-width: 750px;
+    padding: 0px 25px;
+  }
+  .navigation {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (max-width: 762px) {
+  .container-all {
+    max-width: none;
+    padding: 0px 15px;
+  }
 }
